@@ -9,5 +9,9 @@
 #import "GoGrid.h"
 
 @implementation GoGrid
-
++(instancetype)gridWithPoint:(GoPoint *)point{
+    GoGrid *g = [[GoGrid alloc] init];
+    g.point = point;
+    return g;
+}
 @end

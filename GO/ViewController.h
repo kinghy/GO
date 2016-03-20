@@ -11,12 +11,12 @@
 #import "BoardView.h"
 #import "GridLayer.h"
 
-#define kGridWidth 45
-#define kGridHeight 45
-#define kBoardWidth 900
-#define kBoardHeight 900
-#define kOriginX 22.5
-#define kOriginY 22.5
+#define kGridWidth 35
+#define kGridHeight 35
+#define kBoardWidth 700
+#define kBoardHeight 700
+#define kOriginX 17.5
+#define kOriginY 17.5
 
 @interface ViewController : UIViewController
 

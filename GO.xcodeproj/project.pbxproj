@@ -11,8 +11,18 @@
 		7C40FDD91C9BBBA20071974E /* GoBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40FDD81C9BBBA20071974E /* GoBoard.m */; };
 		7C40FDDC1C9BBC820071974E /* GoGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40FDDB1C9BBC820071974E /* GoGrid.m */; };
 		7C46F9521C9BCEA600422BCB /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46F9511C9BCEA600422BCB /* BoardView.m */; };
-		7C46F9581C9BDEC900422BCB /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46F9571C9BDEC900422BCB /* GridView.m */; };
 		7C46F95B1C9BE14E00422BCB /* GridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46F95A1C9BE14E00422BCB /* GridLayer.m */; };
+		7C71DC811C9D034D00E19744 /* b9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC781C9D034D00E19744 /* b9.jpg */; };
+		7C71DC821C9D034D00E19744 /* b8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC791C9D034D00E19744 /* b8.jpg */; };
+		7C71DC831C9D034D00E19744 /* b7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC7A1C9D034D00E19744 /* b7.jpg */; };
+		7C71DC841C9D034D00E19744 /* b6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC7B1C9D034D00E19744 /* b6.jpg */; };
+		7C71DC851C9D034D00E19744 /* b5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC7C1C9D034D00E19744 /* b5.jpg */; };
+		7C71DC861C9D034D00E19744 /* b4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC7D1C9D034D00E19744 /* b4.jpg */; };
+		7C71DC871C9D034D00E19744 /* b3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC7E1C9D034D00E19744 /* b3.jpg */; };
+		7C71DC881C9D034D00E19744 /* b2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC7F1C9D034D00E19744 /* b2.jpeg */; };
+		7C71DC891C9D034D00E19744 /* b1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC801C9D034D00E19744 /* b1.jpg */; };
+		7C71DC8C1C9D1AE900E19744 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C71DC8B1C9D1AE900E19744 /* AVFoundation.framework */; };
+		7C71DC8E1C9D1B6500E19744 /* play.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C71DC8D1C9D1B6500E19744 /* play.mp3 */; };
 		7CC063C11C9AB87E00BAD8C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC063C01C9AB87E00BAD8C8 /* main.m */; };
 		7CC063C41C9AB87E00BAD8C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC063C31C9AB87E00BAD8C8 /* AppDelegate.m */; };
 		7CC063C71C9AB87E00BAD8C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC063C61C9AB87E00BAD8C8 /* ViewController.m */; };
@@ -52,10 +62,20 @@
 		7C40FDDB1C9BBC820071974E /* GoGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoGrid.m; sourceTree = "<group>"; };
 		7C46F9501C9BCEA600422BCB /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
 		7C46F9511C9BCEA600422BCB /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
-		7C46F9561C9BDEC900422BCB /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
-		7C46F9571C9BDEC900422BCB /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
 		7C46F9591C9BE14E00422BCB /* GridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridLayer.h; sourceTree = "<group>"; };
 		7C46F95A1C9BE14E00422BCB /* GridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridLayer.m; sourceTree = "<group>"; };
+		7C71DC781C9D034D00E19744 /* b9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b9.jpg; sourceTree = "<group>"; };
+		7C71DC791C9D034D00E19744 /* b8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b8.jpg; sourceTree = "<group>"; };
+		7C71DC7A1C9D034D00E19744 /* b7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b7.jpg; sourceTree = "<group>"; };
+		7C71DC7B1C9D034D00E19744 /* b6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b6.jpg; sourceTree = "<group>"; };
+		7C71DC7C1C9D034D00E19744 /* b5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b5.jpg; sourceTree = "<group>"; };
+		7C71DC7D1C9D034D00E19744 /* b4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b4.jpg; sourceTree = "<group>"; };
+		7C71DC7E1C9D034D00E19744 /* b3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b3.jpg; sourceTree = "<group>"; };
+		7C71DC7F1C9D034D00E19744 /* b2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b2.jpeg; sourceTree = "<group>"; };
+		7C71DC801C9D034D00E19744 /* b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b1.jpg; sourceTree = "<group>"; };
+		7C71DC8A1C9D165700E19744 /* GoDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoDef.h; sourceTree = "<group>"; };
+		7C71DC8B1C9D1AE900E19744 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7C71DC8D1C9D1B6500E19744 /* play.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play.mp3; sourceTree = "<group>"; };
 		7CC063BC1C9AB87E00BAD8C8 /* GO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC063C01C9AB87E00BAD8C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CC063C21C9AB87E00BAD8C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C71DC8C1C9D1AE900E19744 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +126,7 @@
 		7CC063B31C9AB87E00BAD8C8 = {
 			isa = PBXGroup;
 			children = (
+				7C71DC8B1C9D1AE900E19744 /* AVFoundation.framework */,
 				7CC063BE1C9AB87E00BAD8C8 /* GO */,
 				7CC063D81C9AB87E00BAD8C8 /* GOTests */,
 				7CC063E31C9AB87E00BAD8C8 /* GOUITests */,
@@ -125,6 +147,16 @@
 		7CC063BE1C9AB87E00BAD8C8 /* GO */ = {
 			isa = PBXGroup;
 			children = (
+				7C71DC8D1C9D1B6500E19744 /* play.mp3 */,
+				7C71DC781C9D034D00E19744 /* b9.jpg */,
+				7C71DC791C9D034D00E19744 /* b8.jpg */,
+				7C71DC7A1C9D034D00E19744 /* b7.jpg */,
+				7C71DC7B1C9D034D00E19744 /* b6.jpg */,
+				7C71DC7C1C9D034D00E19744 /* b5.jpg */,
+				7C71DC7D1C9D034D00E19744 /* b4.jpg */,
+				7C71DC7E1C9D034D00E19744 /* b3.jpg */,
+				7C71DC7F1C9D034D00E19744 /* b2.jpeg */,
+				7C71DC801C9D034D00E19744 /* b1.jpg */,
 				7CC063F21C9ABDBD00BAD8C8 /* board.png */,
 				7CC063F31C9ABDBD00BAD8C8 /* black.png */,
 				7CC063F41C9ABDBD00BAD8C8 /* white.png */,
@@ -145,10 +177,9 @@
 				7C40FDDB1C9BBC820071974E /* GoGrid.m */,
 				7C46F9501C9BCEA600422BCB /* BoardView.h */,
 				7C46F9511C9BCEA600422BCB /* BoardView.m */,
-				7C46F9561C9BDEC900422BCB /* GridView.h */,
-				7C46F9571C9BDEC900422BCB /* GridView.m */,
 				7C46F9591C9BE14E00422BCB /* GridLayer.h */,
 				7C46F95A1C9BE14E00422BCB /* GridLayer.m */,
+				7C71DC8A1C9D165700E19744 /* GoDef.h */,
 			);
 			path = GO;
 			sourceTree = "<group>";
@@ -246,6 +277,7 @@
 				TargetAttributes = {
 					7CC063BB1C9AB87E00BAD8C8 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = YR9F8U4M4Z;
 					};
 					7CC063D41C9AB87E00BAD8C8 = {
 						CreatedOnToolsVersion = 7.2;
@@ -282,12 +314,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C71DC871C9D034D00E19744 /* b3.jpg in Resources */,
+				7C71DC8E1C9D1B6500E19744 /* play.mp3 in Resources */,
 				7CC063F61C9ABDBD00BAD8C8 /* black.png in Resources */,
 				7CC063CF1C9AB87E00BAD8C8 /* LaunchScreen.storyboard in Resources */,
+				7C71DC811C9D034D00E19744 /* b9.jpg in Resources */,
+				7C71DC821C9D034D00E19744 /* b8.jpg in Resources */,
+				7C71DC831C9D034D00E19744 /* b7.jpg in Resources */,
+				7C71DC851C9D034D00E19744 /* b5.jpg in Resources */,
+				7C71DC841C9D034D00E19744 /* b6.jpg in Resources */,
+				7C71DC861C9D034D00E19744 /* b4.jpg in Resources */,
 				7CC063CC1C9AB87E00BAD8C8 /* Assets.xcassets in Resources */,
+				7C71DC891C9D034D00E19744 /* b1.jpg in Resources */,
 				7CC063F51C9ABDBD00BAD8C8 /* board.png in Resources */,
 				7CC063F71C9ABDBD00BAD8C8 /* white.png in Resources */,
 				7CC063CA1C9AB87E00BAD8C8 /* Main.storyboard in Resources */,
+				7C71DC881C9D034D00E19744 /* b2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +358,6 @@
 				7C40FDDC1C9BBC820071974E /* GoGrid.m in Sources */,
 				7C46F95B1C9BE14E00422BCB /* GridLayer.m in Sources */,
 				7CC063C41C9AB87E00BAD8C8 /* AppDelegate.m in Sources */,
-				7C46F9581C9BDEC900422BCB /* GridView.m in Sources */,
 				7C40FDD91C9BBBA20071974E /* GoBoard.m in Sources */,
 				7C40FDD61C9BBB590071974E /* ViewModel.m in Sources */,
 				7C46F9521C9BCEA600422BCB /* BoardView.m in Sources */,
@@ -461,7 +502,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.GO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,7 +515,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.GO;
 				PRODUCT_NAME = "$(TARGET_NAME)";

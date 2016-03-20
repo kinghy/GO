@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GoDef.h"
 
 #define kStdLineCount 19
 #define kStdColCount 19
 
-typedef enum : NSUInteger {
-    ChessTypeWhite,
-    ChessTypeBlack
-} ChessType;
-
+@class GoGrid;
+@interface GoPoint : NSObject
+@property int line;//行数
+@property int col;//列数
++(instancetype)pointWithLine:(int)line andCol:(int)col;
+@end
 
 
 @interface GoBoard : NSObject
@@ -28,10 +30,25 @@ typedef enum : NSUInteger {
 
 //棋盘二维数组
 @property (nonatomic,strong)NSArray *boardModel;
+@property (nonatomic,strong)GoGrid *rob;//记录打劫位置，下手解开
 
 @property int lineCount;//行数
 @property int colCount;//列数
 
 @property ChessType nextChessType;
+@property NSMutableArray* steps;
+
+/**
+ *  落子
+ *
+ *  @param line       行数
+ *  @param col        列数
+ *  @param eatChesses 返回吃子GoPoint队列
+ *
+ *  @return 是否可以落子
+ */
+-(BOOL)playAtLine:(int)line andCol:(int)col withEatChesses:(NSArray**)eatChesses;
+
+
 
 @end
