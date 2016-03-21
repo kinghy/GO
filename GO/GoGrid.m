@@ -14,4 +14,10 @@
     g.point = point;
     return g;
 }
+
+-(void)setChess:(ChessType)chess{
+    _chess = chess;
+    _point.chessType = chess;
+}
+
 @end

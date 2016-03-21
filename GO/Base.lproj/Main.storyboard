@@ -23,8 +23,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syb-Fv-GVW">
                                 <rect key="frame" x="724" y="20" width="300" height="748"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1手" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiQ-25-x59">
+                                        <rect key="frame" x="15" y="15" width="270" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEY-5F-bEQ">
+                                        <rect key="frame" x="15" y="703" width="270" height="30"/>
+                                        <state key="normal" title="重置棋局"/>
+                                        <connections>
+                                            <action selector="resetClcked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwi-kj-cBC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2K-wh-Umi">
+                                        <rect key="frame" x="15" y="101" width="270" height="30"/>
+                                        <state key="normal" title="后退一步"/>
+                                        <connections>
+                                            <action selector="dobackClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WkR-Zl-vUl"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4fq-6v-OGF">
-                                        <rect key="frame" x="132.5" y="8" width="35" height="35"/>
+                                        <rect key="frame" x="133" y="46" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="WjD-5C-pIZ"/>
                                             <constraint firstAttribute="height" constant="35" id="ghP-9X-ZV2"/>
@@ -33,10 +53,31 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="NEY-5F-bEQ" firstAttribute="leading" secondItem="syb-Fv-GVW" secondAttribute="leading" constant="15" id="4k0-Wk-4Ge"/>
                                     <constraint firstItem="4fq-6v-OGF" firstAttribute="centerX" secondItem="syb-Fv-GVW" secondAttribute="centerX" id="6sy-lp-yqw"/>
                                     <constraint firstAttribute="width" constant="300" id="B7i-zK-X7D"/>
+                                    <constraint firstAttribute="trailing" secondItem="MiQ-25-x59" secondAttribute="trailing" constant="15" id="Fc7-hl-hzf"/>
+                                    <constraint firstItem="4fq-6v-OGF" firstAttribute="top" secondItem="MiQ-25-x59" secondAttribute="bottom" constant="10" id="HRR-p2-ne1"/>
+                                    <constraint firstItem="h2K-wh-Umi" firstAttribute="top" secondItem="4fq-6v-OGF" secondAttribute="bottom" constant="20" id="Ifa-ff-LU0"/>
+                                    <constraint firstAttribute="trailing" secondItem="NEY-5F-bEQ" secondAttribute="trailing" constant="15" id="M05-xa-f3Q"/>
+                                    <constraint firstItem="MiQ-25-x59" firstAttribute="centerY" secondItem="4fq-6v-OGF" secondAttribute="centerY" id="MWa-m3-EGV"/>
+                                    <constraint firstItem="4fq-6v-OGF" firstAttribute="leading" secondItem="MiQ-25-x59" secondAttribute="trailing" constant="10" id="Ml9-TA-W4X"/>
                                     <constraint firstItem="4fq-6v-OGF" firstAttribute="top" secondItem="syb-Fv-GVW" secondAttribute="top" constant="8" id="Oul-4o-nLN"/>
+                                    <constraint firstItem="MiQ-25-x59" firstAttribute="top" secondItem="syb-Fv-GVW" secondAttribute="top" constant="15" id="QPh-QW-iJ8"/>
+                                    <constraint firstItem="h2K-wh-Umi" firstAttribute="centerX" secondItem="syb-Fv-GVW" secondAttribute="centerX" id="R5N-VC-I4r"/>
+                                    <constraint firstItem="h2K-wh-Umi" firstAttribute="leading" secondItem="syb-Fv-GVW" secondAttribute="leading" constant="15" id="ZL8-Ar-soR"/>
+                                    <constraint firstItem="MiQ-25-x59" firstAttribute="leading" secondItem="syb-Fv-GVW" secondAttribute="leading" constant="15" id="ZhR-e0-QYP"/>
+                                    <constraint firstAttribute="trailing" secondItem="h2K-wh-Umi" secondAttribute="trailing" constant="15" id="b3l-c6-uou"/>
+                                    <constraint firstAttribute="bottom" secondItem="NEY-5F-bEQ" secondAttribute="bottom" constant="15" id="gML-G9-xaE"/>
+                                    <constraint firstItem="NEY-5F-bEQ" firstAttribute="centerX" secondItem="syb-Fv-GVW" secondAttribute="centerX" id="nCM-OQ-2qV"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MWa-m3-EGV"/>
+                                        <exclude reference="Ml9-TA-W4X"/>
+                                        <exclude reference="Oul-4o-nLN"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -81,11 +122,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="nextChessImage" destination="4fq-6v-OGF" id="Sa2-Fa-LrC"/>
+                        <outlet property="stepLabel" destination="MiQ-25-x59" id="gfr-29-4CG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="326"/>
+            <point key="canvasLocation" x="-575" y="220"/>
         </scene>
     </scenes>
     <resources>

@@ -20,7 +20,10 @@
 @property (strong,nonatomic) CALayer    *handLayer;
 
 @property (strong,nonatomic) AVAudioPlayer *avPlayer;
+- (IBAction)resetClcked:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *stepLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *nextChessImage;
+- (IBAction)dobackClicked:(id)sender;
 
 @end
 
@@ -62,6 +65,7 @@
         }
         [arr addObject:line];
     }
+    self.stepLabel.text = [NSString stringWithFormat:@"第%ld手",self.model.goBoard.stepCount+1];
     self.gridLayer = [NSArray arrayWithArray:arr];
     self.nextChessImage.image = self.model.goBoard.nextChessType == ChessTypeBlack ? [UIImage imageNamed:@"black"] :[UIImage imageNamed:@"white"];
     
@@ -144,11 +148,41 @@
                         }
                     }
                     self.nextChessImage.image = self.model.goBoard.nextChessType == ChessTypeBlack ? [UIImage imageNamed:@"black"] :[UIImage imageNamed:@"white"];
+                    self.stepLabel.text = [NSString stringWithFormat:@"第%ld手",self.model.goBoard.stepCount+1];
                 }
                 
             }
         }
     }
+}
+- (IBAction)resetClcked:(id)sender {
+    for(NSArray* line in self.gridLayer){
+        for ( GridLayer* layer in line  ) {
+            layer.contents = nil;
+        }
+    }
+
+    [self.model.goBoard restart];
+    self.stepLabel.text = [NSString stringWithFormat:@"第%ld手",self.model.goBoard.stepCount+1];
+    self.nextChessImage.image = self.model.goBoard.nextChessType == ChessTypeBlack ? [UIImage imageNamed:@"black"] :[UIImage imageNamed:@"white"];
+}
+- (IBAction)dobackClicked:(id)sender {
+    NSArray* eats = nil;
+    GoPoint *step = [self.model.goBoard doBackWithEatChesses:&eats];
+    //先放吃子
+    for (GoPoint* gp in eats) {
+        GridLayer *g = self.gridLayer[gp.line][gp.col];
+        if (gp.chessType == ChessTypeBlack) {
+            g.contents = (id)[UIImage imageNamed:@"black"].CGImage;
+        }else{
+            g.contents = (id)[UIImage imageNamed:@"white"].CGImage;
+        }
+    }
+    //再拿落字
+    GridLayer *g = self.gridLayer[step.line][step.col];
+    g.contents = nil;
+    self.stepLabel.text = [NSString stringWithFormat:@"第%ld手",self.model.goBoard.stepCount+1];
+    self.nextChessImage.image = self.model.goBoard.nextChessType == ChessTypeBlack ? [UIImage imageNamed:@"black"] :[UIImage imageNamed:@"white"];
 }
 @end
 
